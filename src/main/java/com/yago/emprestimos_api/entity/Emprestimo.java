@@ -8,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "emprestimos")
@@ -33,8 +34,12 @@ public class Emprestimo {
 
     private Integer numeroParcelas;
 
+    private LocalDate dataEmprestimo;
+
     @Enumerated(EnumType.STRING)
     private StatusEmprestimo statusEmprestimo;
+
+
 
 
 
